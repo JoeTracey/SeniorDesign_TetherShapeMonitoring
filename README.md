@@ -19,7 +19,7 @@
 ## ./Ansys_Results/
 ####    Stores the results from test run for Paper
 
-**Bending/**    Bend testing with various forces, constant layout
+**Bending/**    Bend testing with various forces, constant layout<br/>
 **Rotation/**   Bend testing with various layout orientations, constant force applied
 
 
@@ -27,7 +27,7 @@
 ## ./Renders/
 ####     Stores results from python drivers
 
-**Bending/**    Render outputs from driver on bending force data 
+**Bending/**    Render outputs from driver on bending force data <br/>
 **Rotated/**    Render outputs from driver on rotation data
 
 
