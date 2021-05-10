@@ -1,5 +1,5 @@
 
-![](Renders/0 stress.png)
+![](Renders/0%20stress.png)
 
 
 # Repository Breakdown:
