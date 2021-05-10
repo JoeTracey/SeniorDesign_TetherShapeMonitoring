@@ -2,6 +2,8 @@
 
 # Repository Breakdown:
 
+<br/>
+
 ## ./Ansys/
 ####    Three files to be run sequentially in order to render the tether in ANSYS with desired stress and layout (Three point bend), returning strain values and displacement 
 
@@ -14,6 +16,8 @@
 **3_3_point_Bending.txt-**
     Apply bending forces to the beam generated in part-2, returns the displacement and strain values
 
+<br/>
+
 
 
 ## ./Ansys_Results/
@@ -23,6 +27,8 @@
 **Rotation/**   Bend testing with various layout orientations, constant force applied
 
 
+<br/>
+
 
 ## ./Renders/
 ####     Stores results from python drivers
@@ -30,6 +36,8 @@
 **Bending/**    Render outputs from driver on bending force data <br/>
 **Rotated/**    Render outputs from driver on rotation data
 
+
+<br/>
 
 
 ## ./
@@ -49,6 +57,7 @@
 **generate_wavelength.py**
     Parses Ansys data from Ansys_Results/bending/ and Ansys_Results/rotated/, printing the wavelength shift for each trial
 
+<br/>
 
 ### Drivers rely on the following files, containing function definitions
 
