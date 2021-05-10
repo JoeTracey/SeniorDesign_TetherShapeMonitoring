@@ -1,4 +1,6 @@
 
+![](Renders/0 stress.png)
+
 
 # Repository Breakdown:
 
