@@ -1,8 +1,8 @@
 
 
-#Repository Breakdown:
+# Repository Breakdown:
 
-##./Ansys/
+## ./Ansys/
 ####    Three files to be run sequentially in order to render the tether in ANSYS with desired stress and layout (Three point bend), returning strain values and displacement 
 
 **1_2D_Cross_Section_write.txt-**
@@ -16,7 +16,7 @@
 
 
 
-##./Ansys_Results/
+## ./Ansys_Results/
 ####    Stores the results from test run for Paper
 
 **Bending/**    Bend testing with various forces, constant layout
@@ -24,7 +24,7 @@
 
 
 
-##./Renders/
+## ./Renders/
 ####     Stores results from python drivers
 
 **Bending/**    Render outputs from driver on bending force data 
@@ -32,10 +32,10 @@
 
 
 
-##./
+## ./
 ####    Contains all python drivers and files neccesary to run them
 
-###Drivers:
+### Drivers:
 
 **parsed_bending_driver.py**
     Parses bending data from /Ansys_Results/Bending/ and renders an output for each trail
@@ -50,7 +50,7 @@
     Parses Ansys data from Ansys_Results/bending/ and Ansys_Results/rotated/, printing the wavelength shift for each trial
 
 
-###Drivers rely on the following files, containing function definitions
+### Drivers rely on the following files, containing function definitions
 
 
 **parser.py**
