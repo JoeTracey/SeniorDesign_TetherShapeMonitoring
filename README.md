@@ -85,11 +85,11 @@
 
 ![](Renders/Bending/driver_test0_.png)
 
-####    Render with 0N of Force
+####    Python rendering of tether with 0N of Force
 
 ![](Renders/Bending/driver_test8_.png)
 
-####    Render with 200N of Force
+####    Python rendering of tether with 200N of Force
 
 
 
