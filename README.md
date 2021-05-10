@@ -1,5 +1,6 @@
 
-![](Renders/0%20stress.png)
+![](Renders/tester_diagram.gif)
+![](Renders/tester.gif)
 
 
 # Repository Breakdown:
@@ -72,6 +73,10 @@
 **render_shape.py**
     Functions to take bend direction and bend rate for each segment, interpolate, and render 2D output 
 
+
+
+![](Renders/Bending/driver_test0_.png)
+![](Renders/Bending/driver_test8_.png)
 
 
 
