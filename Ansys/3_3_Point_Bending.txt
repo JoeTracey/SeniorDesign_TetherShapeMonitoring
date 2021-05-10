@@ -1,0 +1,94 @@
+/clear
+/title, Three Fiber Model, Bend
+/config,nproc,2 ! configure number of processors
+
+!PRE PROCESSOR
+/prep7
+
+!FIBER PROPERTIES
+MP, EX, 1, 74.52e3					!Young's Modulus for fused silica (N/mm^2)
+MP, PRXY, 1, 0.17					!Poisson Ratio for fused silica 
+
+tot_length = 10						!20ft testing cables, 										
+
+et, 1, 189
+sectype, 1, beam, mesh
+SECREAD,section_threefiber,sec,,mesh		!read section
+
+k, 1, 0, 0, 0
+k, 2, 0, 0, tot_length
+k, 3, 0, tot_length/2, tot_length/2
+
+lstr,1,2
+latt,1,,1,,3,,1
+lesize,all,,, 32							
+
+lmesh,all
+/eshape, 1
+eplot
+
+/SOLU
+ANTYPE, 0
+
+ESEL, S,,, 16
+SFBEAM, ALL, 1, PRES, 10
+ESEL, S,,, ALL
+EPLOT
+
+DK, 1, UX, 0
+DK, 1, UY, 0
+DK, 1, UZ, 0
+DK, 1, ROTY, 0
+DK, 1, ROTZ, 0
+
+DK, 2, UX, 0
+DK, 2, UY, 0
+DK, 2, UZ, 0
+DK, 2, ROTY, 0
+DK, 2, ROTZ, 0
+
+SOLVE
+FINISH
+
+/POST1
+PLDISP, 1
+
+PLESOL, EPTO, INT
+!selects certain element and outputs strain values for only that element. purpose: find strain on the grating, chose elements that represent the grating
+
+ESEL, S,,, 4
+PLESOL, EPTO, INT
+PRESOL, EPTO, COMP
+
+ESEL, S,,, 8
+PLESOL, EPTO, INT
+PRESOL, EPTO, COMP
+
+ESEL, S,,, 12
+PLESOL, EPTO, INT
+PRESOL, EPTO, COMP
+
+ESEL, S,,, 16
+PLESOL, EPTO, INT
+PRESOL, EPTO, COMP
+
+ESEL, S,,, 20
+PLESOL, EPTO, INT
+PRESOL, EPTO, COMP
+
+ESEL, S,,, 24
+PLESOL, EPTO, INT
+PRESOL, EPTO, COMP
+
+ESEL, S,,, 28
+PLESOL, EPTO, INT
+PRESOL, EPTO, COMP
+
+ESEL, S,,, 32
+PLESOL, EPTO, INT
+PRESOL, EPTO, COMP
+
+ESEL, S,,, ALL
+PLESOL, EPTO, INT
+
+PRNSOL, U, Y

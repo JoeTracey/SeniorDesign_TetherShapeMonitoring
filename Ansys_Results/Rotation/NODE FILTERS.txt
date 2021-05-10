@@ -1,0 +1,49 @@
+ 0  
+NODE 47 - Fiber 1
+NODE 197 - Fiber 2
+NODE 413 - Fiber 3
+
+ 36  
+NODE 35 - Fiber 1
+NODE 212 - Fiber 2
+NODE 358 - Fiber 3
+
+ 72  
+NODE 35 - Fiber 1
+NODE 228 - Fiber 2
+NODE 393 - Fiber 3
+
+ 108  
+NODE 47 - Fiber 1
+NODE 197 - Fiber 2
+NODE 397 - Fiber 3
+
+ 144  
+NODE 4 - Fiber 1
+NODE 204 - Fiber 2
+NODE 381 - Fiber 3
+
+ 180  
+NODE 51 - Fiber 1
+NODE 216 - Fiber 2
+NODE 405 - Fiber 3
+
+ 216  
+NODE 51 - Fiber 1
+NODE 185 - Fiber 2
+NODE 397 - Fiber 3
+
+ 252  
+NODE 51 - Fiber 1
+NODE 216 - Fiber 2
+NODE 362 - Fiber 3
+
+ 288  
+NODE 4 - Fiber 1
+NODE 204 - Fiber 2
+NODE 350 - Fiber 3
+
+ 324  
+NODE 51 - Fiber 1
+NODE 228 - Fiber 2
+NODE 378 - Fiber 3

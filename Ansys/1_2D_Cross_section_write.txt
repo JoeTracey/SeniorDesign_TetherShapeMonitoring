@@ -1,0 +1,74 @@
+/clear
+/title, Three Fiber Model, 2D Section
+/config,nproc,2 ! configure number of processors
+
+!PRE PROCESSOR
+/prep7
+
+!PARAMETERS
+fdiam = 50e-3		!fiber diameter
+fradius = fdiam / 2
+teth_rad = 150e-3	!fiber suspension diameter
+
+
+f1_caxis_distx = 0		!distance from central axis in x-direction for fiber 1
+f1_caxis_disty = 75e-3		!distance from central axis in y-direction for fiber 1
+
+f2_caxis_distx = -64.95e-3		!distance from central axis in x-direction  for fiber 2
+f2_caxis_disty = -37.5e-3		!distance from central axis in y-direction for fiber 2
+
+f3_caxis_distx = 64.95e-3			!distance from central axis in x-direction for fiber 3
+f3_caxis_disty = -37.5e-3	!distance from central axis in y-direction  for fiber 3
+
+!FIBER PROPERTIES
+MP, EX, 1, 74.52e3					!Young's Modulus for fused silica (N/mm^2)
+MP, PRXY, 1, 0.17					!Poisson Ratio for fused silica 
+
+MP, EX, 2, 74.52e3					!Young's Modulus for fused silica (N/mm^2)
+MP, PRXY, 2, 0.17					!Poisson Ratio for fused silica
+
+k, 1, 0, -teth_rad, 0 
+k, 2, teth_rad, 0, 0   
+k, 3, 0, teth_rad, 0   
+k, 4, -teth_rad, 0, 0   
+csys, 1					
+L, 1, 2 
+L, 2, 3 
+L, 3, 4 
+L, 4, 1 
+csys, 0 
+FLST, 2, 4, 4  
+FITEM, 2, 1   
+FITEM, 2, 2   
+FITEM, 2, 3   
+FITEM, 2, 4     
+AL, P51X 
+csys, 0  
+
+CYL4, f1_caxis_distx, f1_caxis_disty, fradius	!fiber 1 
+CYL4, f2_caxis_distx, f2_caxis_disty, fradius	!fiber 2
+CYL4, f3_caxis_distx, f3_caxis_disty, fradius	!fiber 3
+FLST, 3, 3, 5, NOOR, 3
+FITEM, 3, 2   
+FITEM, 3, 3
+FITEM, 3, 4
+ASBA, 1, P51X
+
+!FIBERS
+CYL4, f1_caxis_distx, f1_caxis_disty, fradius	!fiber 1 
+CYL4, f2_caxis_distx, f2_caxis_disty, fradius	!fiber 2
+CYL4, f3_caxis_distx, f3_caxis_disty, fradius	!fiber 3
+
+NUMMRG, ALL		!merge all nodes and sections
+
+et, 1, 200, 7
+esize, 0.9e-2
+amesh, 1
+amesh, 2
+amesh, 3
+
+et, 1, 200, 7
+esize = 0.5
+amesh, 5
+
+SECWRITE,section_threefiber,sec,,1		!save section

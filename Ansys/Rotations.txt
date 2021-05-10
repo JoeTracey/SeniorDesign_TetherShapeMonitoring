@@ -1,0 +1,99 @@
+BASE
+f1_caxis_distx = 0		
+f1_caxis_disty = 75e-3		
+
+f2_caxis_distx = -64.95e-3		
+f2_caxis_disty = -37.5e-3		
+
+f3_caxis_distx = 64.95e-3			
+f3_caxis_disty = -37.5e-3	
+
+36 DEGREE
+f1_caxis_distx = -44.08e-3		
+f1_caxis_disty = 60.67e-3		
+
+f2_caxis_distx = -30.5e-3		
+f2_caxis_disty = -68.5e-3		
+
+f3_caxis_distx = 74.59e-3			
+f3_caxis_disty = 7.84e-3	
+
+72 DEGREE
+f1_caxis_distx = -71.33e-3		
+f1_caxis_disty = 23.18e-3		
+
+f2_caxis_distx = 16.6e-3		
+f2_caxis_disty = -73.36e-3		
+
+f3_caxis_distx = 55.74e-3			
+f3_caxis_disty = 50.18e-3	
+
+108 DEGREE
+f1_caxis_distx = -71.33e-3		
+f1_caxis_disty = -23.18e-3		
+
+f2_caxis_distx = 55.74e-3		
+f2_caxis_disty = -50.18e-3		
+
+f3_caxis_distx = 15.59e-3			
+f3_caxis_disty = 73.36e-3	
+
+144 DEGREE
+f1_caxis_distx = -44.08e-3		
+f1_caxis_disty = -60.78e-3		
+
+f2_caxis_distx = 74.59e-3		
+f2_caxis_disty = -7.84e-3		
+
+f3_caxis_distx = -30.5e-3			
+f3_caxis_disty = 68.51e-3	
+
+180 DEGREE
+f1_caxis_distx = 0		
+f1_caxis_disty = -75e-3		
+
+f2_caxis_distx = 64.95e-3		
+f2_caxis_disty = 37.5e-3		
+
+f3_caxis_distx = -64.95e-3			
+f3_caxis_disty = 37.5e-3
+
+216 DEGREE
+f1_caxis_distx = 44.08e-3		
+f1_caxis_disty = -60.68e-3	
+
+f2_caxis_distx = 30.5e-3		
+f2_caxis_disty = 68.5e-3		
+
+f3_caxis_distx = -74.59e-3			
+f3_caxis_disty = -7.84e-3	
+ 
+252 DEGREE
+f1_caxis_distx = 71.33e-3		
+f1_caxis_disty = -23.18e-3		
+
+f2_caxis_distx = -15.59e-3		
+f2_caxis_disty = 73.36e-3	
+
+f3_caxis_distx = -55.74e-3			
+f3_caxis_disty = -50.18e-3	
+
+288
+f1_caxis_distx = 71.33e-3		
+f1_caxis_disty = 23.18e-3		
+
+f2_caxis_distx = -55.74e-3		
+f2_caxis_disty = 50.18e-3	
+
+f3_caxis_distx = -15.59e-3			
+f3_caxis_disty = -73.36e-3	
+
+324 DEGREE
+f1_caxis_distx = 44.08e-3		
+f1_caxis_disty = 60.68e-3		
+
+f2_caxis_distx = -74.59e-3		
+f2_caxis_disty = 7.84e-3		
+
+f3_caxis_distx = 30.503e-3			
+f3_caxis_disty = -68.51e-3	

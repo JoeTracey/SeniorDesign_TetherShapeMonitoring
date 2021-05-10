@@ -1,0 +1,4 @@
+
+ MAXIMUM ABSOLUTE VALUES
+ NODE         34
+ VALUE   -43.939     
