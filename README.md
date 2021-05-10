@@ -1,6 +1,11 @@
 
 ![](Renders/tester_diagram.gif)
+
+####    Rotating Cross Section of Tether with 3 fibers
+
 ![](Renders/tester.gif)
+
+####    Distance from neutral axis for each fiber as tether is rotated <br/>
 
 
 # Repository Breakdown:
@@ -76,7 +81,13 @@
 
 
 ![](Renders/Bending/driver_test0_.png)
+
+####    Render with 0N of Force
+
 ![](Renders/Bending/driver_test8_.png)
+
+####    Render with 200N of Force
+
 
 
 
