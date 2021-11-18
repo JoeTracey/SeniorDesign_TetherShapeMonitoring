@@ -9,8 +9,9 @@ from render_shape import *
 from parser import *
 
 
-#Input your data as Nodes
+#Driver uses imported functions to determine and graph the bend rate of tether based on rotational testing
 
+#parse bend data for rotation test
 bends = []
 for i in range(10):
     i= 36*i
@@ -32,7 +33,7 @@ for trial in range(10):
 
 
 
-#Check bend rates
+#Check bend rates, accounting for bend direction, then graph
 iter = 0
 for trial in range(10):
     bend_rates = []
